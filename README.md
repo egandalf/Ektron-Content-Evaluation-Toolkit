@@ -4,7 +4,11 @@ This tool is designed to give you some idea for the level of effort required (an
 
 Note that this is in no way a gaurantee and the mathematics involved make some assumptions. It attempts to address ideas such as content complexity and content value through additions or multiplications of the time involved to move the content manually. Much of this is configurable within the tool.
 
-The Excel files are identical with the exception of how the totals and end-results are computed. The version with macros is able to limit the items flagged for manual effort by limiting them to the first N which fall below the indicated velocity threshold and within the desired manual effort window. The non-macros version is unable to limit the items to the desired threshold and, instead, will mark the calculated hours in RED if they total above the configured allowed effort.
+**The Excel files are intended to be used in cases where access to the site code isn't practical.** They are there for marketers or other business admins in the CMS to manually estimate and enter the values for each Smart Form and content type. 
+
+These files are identical with the exception of how the totals and end-results are computed. The version with macros is able to limit the items flagged for manual effort by limiting them to the first N which fall below the indicated velocity threshold and within the desired manual effort window. The non-macros version is unable to limit the items to the desired threshold and, instead, will mark the calculated hours in RED if they total above the configured allowed effort.
+
+**The code version is written using Ektron's Framework APIs and is therefore restricted to versions 8.5 or later.** However, a developer could replace those APIs with their older counterparts if desired. Alternatively, companies running an 8.0* version or earlier could simply use the supplied Excel file.
 
 The best option is to use the code provided. It provides similar calculations and determinations, but removes the manual effort of entering Smart Form types as well as guesswork around the velocity of the content. The code has only been tested against a site with around 4,000 items. If you have more than that, it may take some time (and even time out) when retrieving the data it needs to perform the evaluation. If so, a timeout will have to be set in the code behind. I confess this isn't my cleanest or most efficient code but it should work for many customers and can be tweaked by those with the know-how to make it better.
 
